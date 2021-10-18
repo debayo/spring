@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <!--开启 @AspectJ 配置-->
+    <aop:aspectj-autoproxy/>
+    <context:component-scan base-package="com.javadoop.circulardependency" />
+
+
+
+<!--    <bean id="logArgsAspect" class="com.javadoop.springaoplearning.aop_spring_2_aspectj.LogArgsAspect">-->
+<!--        &lt;!&ndash;如果需要配置参数，和普通的 bean 一样操作&ndash;&gt;-->
+<!--        <property name="trace" value="true"/>-->
+<!--    </bean>-->
+
+<!--    <bean class="com.javadoop.springaoplearning.aop_spring_2_aspectj.LogResultAspect">-->
+<!--        <property name="trace" value="true"/>-->
+<!--    </bean>-->
+
+</beans>
